@@ -5,10 +5,11 @@
 
 (comment
   ;; First init the model - using load-model instead of init
-  (def model (whisper/load-model "models/ggml-model-f32"))
+  (def get-text (whisper/record-and-transcribe "models/ggml-base.en.bin"))
 
   ;; Then use the initialized model for recording
-  (def get-text (whisper/record-and-transcribe model))
+  (def get-text (whisper/record-and-transcribe "models/ggml-model-q5_0.bin"))
+  (def get-text (whisper/record-and-transcribe "models/ggml-model.bin"))
 
   ;; Get the transcription when ready
   (def transcription (get-text)))
