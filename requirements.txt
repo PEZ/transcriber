@@ -1,0 +1,4 @@
+numpy==1.24.3  # Must be <2.2 for compatibility with numba
+torch>=2.0.0
+safetensors
+openai-whisper
