@@ -1,14 +1,6 @@
 # Project specific
 /models/
 /tmp/
-*.wav
-*.mp3
-*.ogg
-*.flac
-*.bin
-*.f16
-*.f32
-*.gguf
 
 # Clojure
 /target/
@@ -24,45 +16,9 @@ pom.xml.asc
 .hg/
 .cpcache/
 
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-*.so
-.Python
-env/
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-*.egg-info/
-.installed.cfg
-*.egg
-whisper_env/
-
-# Virtual Environments
-venv/
-ENV/
-env/
-.env/
-*env*/
-
-# IDE files
-.idea/
-.vscode/
-*.swp
-*.swo
-.calva/
-.lsp/
-.clj-kondo/
-.eastwood
+.calva/output-window
+.lsp/.cache
+.clj-kondo/.cache
 
 # OS specific
 .DS_Store
@@ -74,36 +30,6 @@ ehthumbs.db
 Thumbs.db
 *~
 
-# Dependency directories
 node_modules/
-jspm_packages/
-bower_components/
 
-# Logs and databases
-logs/
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-*.sqlite
-*.sqlite3
-*.db
-
-# Build outputs and temp files
-.cljs_node_repl/
-.shadow-cljs/
-out/
-auto/
-.sass-cache/
-.parcel-cache/
-.cache/
-
-# Don't ignore your actual source code
-!src/
-!resources/public/
-
-# Either we keep it or exclude it, but not both
-# Remove duplicate entry
-# Distribution / packaging
-# .Python  # Already listed earlier
-# downloads/  # Already listed earlier
+downloads/
