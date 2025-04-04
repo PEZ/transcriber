@@ -1,8 +1,6 @@
-## Environment Setup
+# Experiments with kb-whisperer
 
-This project requires specific package versions for compatibility. Set up your environment using:
+Follow instructions here for downloading the model(s)
+* https://huggingface.co/KBLab/kb-whisper-large#whispercpp--ggml
 
-```bash
-python -m venv whisper_env
-source whisper_env/bin/activate
-pip install -r requirements.txt
+Download to ./models

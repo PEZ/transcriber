@@ -12,5 +12,11 @@
   (def get-text (whisper/record-and-transcribe "models/ggml-model.bin"))
 
   ;; Get the transcription when ready
-  (def transcription (get-text)))
+  (def transcription (get-text))
 
+  (def transcription (whisper/transcribe-wav
+                      "models/ggml-model-q5_0.bin"
+                      #_"models/ggml-model.bin"
+                      "test-data/chatgpt-rovarspraksfunderinar.wav"))
+
+  :rcf)
